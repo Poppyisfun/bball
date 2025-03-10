@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basketball Counter</title>
+  <!-- Google Fonts for Silkscreen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="scoreboard">
+      <!-- Home Section -->
+      <div class="team">
+        <h1 class="silkscreen-bold">HOME</h1>
+        <div class="score silkscreen-bold" id="home-score">0</div>
+        <div class="buttons">
+          <button class="silkscreen-regular" onclick="addPoints('home', 1)">+1</button>
+          <button class="silkscreen-regular" onclick="addPoints('home', 2)">+2</button>
+          <button class="silkscreen-regular" onclick="addPoints('home', 3)">+3</button>
+        </div>
+      </div>
+
+      <!-- Guest Section -->
+      <div class="team">
+        <h1 class="silkscreen-bold">GUEST</h1>
+        <div class="score silkscreen-bold" id="guest-score">0</div>
+        <div class="buttons">
+          <button class="silkscreen-regular" onclick="addPoints('guest', 1)">+1</button>
+          <button class="silkscreen-regular" onclick="addPoints('guest', 2)">+2</button>
+          <button class="silkscreen-regular" onclick="addPoints('guest', 3)">+3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
